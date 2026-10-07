@@ -1,0 +1,7 @@
+services:
+  nanobot:
+    image: docker.io/makos/nanobot:latest
+    build:
+      context: .
+    volumes:
+      - ./.nanobot:/root/.nanobot:Z
